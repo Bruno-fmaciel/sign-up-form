@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
@@ -8,20 +9,63 @@
 
 <body>
     <div id="images">
-        <img src="./imgs/javier-santos-guzman-9MR78HGoflw-unsplash.jpg" alt="Smith machine with big window in front" class="background">
+        <img src="./imgs/javier-santos-guzman-9MR78HGoflw-unsplash.jpg" alt="Smith machine with big window in front" class="background" >
         <div id="logo-background">
-            <img src="./imgs/png-transparent-computer-icons-dumbbell-dumbbell-angle-text-logo.png" alt="black dumbell logo" class="logo">
+            <img src="./imgs/png-transparent-computer-icons-dumbbell-dumbbell-angle-text-logo-removebg-preview.png" alt="black dumbell logo" class="logo">
         </div>    
     </div>
 
-    <h2><strong>Esse não é um serviço de verdade!</strong>Você sabe que precisa de um serviço assim, para lhe ajudar a alcançar seus objetivos
-    <em>Cadastre-se</em> para dar início.</h2>
-    <h2>Você <em>sabe</em> que quer se cadastrar.</h2>
+    <div class="container">
+        <div id="text-title">
+            <h2><strong>Esse não é um serviço de verdade!</strong>Você sabe que precisa de um serviço assim, para lhe ajudar a alcançar seus objetivos
+            <em>Cadastre-se</em> para dar início.</h2>
+            <h2>Você <em>sabe</em> que quer se cadastrar.</h2>
+        </div>
 
-    <form action="#" method="post">
+        <form action="#" method="post">
+            <div id="input-area">
+                <legend style="font-size: 32px; font-weight: bold;">Vamos nessa!</legend>
+                <div class="inputs">
+                    <fieldset id="identificacao">
+                        <div class="left-top">
+                            <label for="primeiro-nome">Primerio nome:*</label>
+                            <input type="text" name="primeiro-nome" id="primeiro-nome" required>
+                        </div>
+                        <div class="right-top">
+                            <label for="ultimo-nome">Último nome:*</label>
+                            <input type="text" name="ultimo-nome" id="ultimo-nome" required>
+                        </div>
+                    </fieldset>
 
-        
-    </form>
-    
+                    <fieldset id="contato">
+                        <div class="left-mid">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                        </div>
+                        <div class="right-mid">
+                            <label for="numero">Número:</label>
+                            <input type="text" name="numero" id="numero" placeholder="Ex.: +XX (XX) XXXXX-XXXX">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="senhas">
+                        <div class="left-bottom">
+                            <label for="senha">Informe uma senha:*</label>
+                            <input type="password" name="senha" id="senha" minlength="6" maxlength="8" required>
+                        </div>
+                        <div class="right-bottom">
+                            <label for="confirmar-senha">Confirmar senha:*</label>
+                            <input type="password" name="confirmar-senha" id="confirmar-senha" minlength="6" maxlength="8" required>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <button type="submit">Criar Conta</button>
+            <p>Ja tem uma conta? <a href="#">Log in</a></p>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
