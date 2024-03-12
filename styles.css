@@ -25,7 +25,7 @@ body {
 }
 
 #text-title {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -34,11 +34,81 @@ body {
 }
 
 #input-area {
-    height: 30vh;
+    height: 40vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .inputs {
     display: flex;
-    flex-direction: column;
+    margin-top: 5%;
+    width: auto;
+
 }
+
+legend {
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+fieldset {
+    border: 0;
+    width: 60vw;
+    height: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+input {
+    height: 3vh;
+    width: 200px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 70px;
+    width: 200px;
+    font-size: 24px;
+}
+
+p{
+    margin-left: 2%;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo-background {
+    background: lightgray;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 700px;
+}
+
+.logo {
+    height: 150px;
+}
+
