@@ -18,16 +18,27 @@ body {
 }
 
 .container {
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
+    background: #Fafafa;
 }
 
 #text-title {
     height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 #input-area {
     height: 30vh;
+    background-color: white;
 }
 
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
